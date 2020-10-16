@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'belectro/css/footer-menu.css' %}">
+
+</head>
+<body >
+
+
+        <footer class="footer">
+            <div class="container-fluid padding" id="footerContainer">
+                <div class="row text-center" id="footerRow" style="background-color: cadetblue !important;">
+                                 <div class="col-md-4" >
+                                  <div  id="logo"> BElectro</div>
+
+                                     <hr class="dark" >
+                                     <div id="about">
+                                  <h5><a href="/aboutus">About Us</a></h5>
+                                  <h5><a href="/#services">Services</a></h5>
+                                     </div>
+
+                                 </div>
+
+                            <hr class="dark">
+                           <br>
+                            <div class="col-md-4">
+
+                                <form class="form-inline-centered">
+                                    <div class="col-md-12">
+                                    <h3 >Ofertat e Fundit!</h3>
+                                  <div class="form-group mb-2">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="text"   class="form-control"    placeholder="Email" id="email">
+                                      <span id="emailMsg"></span>
+                                  </div>
+                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="subscribe">
+                                          Subscribe
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h2 class="modal-title" id="exampleModalLabel">Mesazh</h2>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                  Emaili juaj u regjistrua me sukses!
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-success" data-dismiss="modal">Mbyll</button>
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                                <div class="col-md-4" id="FollowContact">
+                                    <hr class="dark">
+                                    <div class="col-md-6-centered">
+                                    <h3 id="followUs">Follow us</h3>
+                                        <div class="col-m4-4" id="social">
+                                           <a class="fb-ic mr-3" role="button"><i class="fab fa-lg fa-facebook-f"></i></a>
+                                           <a class="ins-ic mr-3" role="button"><i class="fab fa-lg fa-instagram"></i></a>
+                                           <a class="li-ic mr-3" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a>
+                                        </div>
+                                       </div>
+
+                                  <br><hr class="dark ">
+
+                                  <div class="contact">
+                                  <div class="col-md-12  " id="contactMore">
+                                     <h4>Na Kontaktoni në:</h4>
+
+                                        <h6>Tel: +355696731549</h6>
+                                        <h6>e-mail: belectro@belectro.tech</h6>
+
+                                  </div>
+
+                                 </div>
+                                </div>
+
+                </div>
+            </div>
+        </footer>
+
+<script type="text/javascript">
+
+
+
+
+    $(document).ready(function() {
+        // set initially button state hidden
+        $("#subscribe").hide();
+        // use keyup event on email field
+        $("#email").keyup(function () {
+            if (validateEmail()) {
+                // if the email is validated
+                // set input email border green
+                $("#email").css("border", "2px solid green");
+                // and set label
+                $("#emailMsg").html("<p class='bg-success text-white'>Emaili është i saktë!</p>");
+            } else {
+                // if the email is not validated
+                // set border red
+                $("#email").css("border", "2px solid red");
+                $("#emailMsg").html("<p class='bg-danger text-white'>Emaili nuk është i saktë!</p>");
+            }
+            buttonState();
+        });
+    });
+
+		function buttonState(){
+		if(validateEmail() ){
+			// if the both email and password are validate
+			// then button should show visible
+			$("#subscribe").show();
+		}else{
+			// if both email and pasword are not validated
+			// button state should hidden
+			$("#subscribe").hide();
+		}
+	}
+	function validateEmail(){
+		// get value of input email
+		var email=$("#email").val();
+		// use reular expression
+		 var regex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+		 return regex.test(email);
+
+    }
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

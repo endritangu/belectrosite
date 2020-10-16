@@ -1,0 +1,79 @@
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer{
+    margin-top: auto;
+    padding: 0;
+    width: 100%;
+
+}
+#aboutcontainer{
+
+    padding-top: 100px;
+}
+
+#contactPage {
+    color: black;
+}
+p{
+    color: black;
+}
+.card-text{
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.container{
+    padding-top: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    position: relative;
+    margin-right: -50%;
+
+
+}
+.col-md-8{
+    position: absolute;
+    margin-left: 15%;
+    height: 50%;
+
+}
+#vizioni{
+    text-align: center;
+    font-size: 15px;
+     position: center!important;
+
+    background-color: transparent;
+    height: 30%  ;
+    width: 87.5%;
+    margin-left: 6.5%;
+}
+
+.card-title{
+    font-size: 50px;
+}
+
+#aboutcontainer{
+     position: center;
+}
+#infoNe{
+    display: inline;
+    font-size: 15px;
+    line-height: 2px;
+
+}
+#vizioniYne{
+    display: inline;
+    font-size: 15px;
+    line-height: 2px;
+
+}
+#kush{
+    background-color: transparent;
+}

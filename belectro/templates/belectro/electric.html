@@ -1,0 +1,118 @@
+{% load  static %}
+
+<html lang="en">
+
+<head>
+        <title>Ngrohje-Ftohje</title>
+        {% block links_css %}
+
+        {% endblock links_css %}
+          <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Font Awsome -->
+            <script src="https://kit.fontawesome.com/7ead4113d0.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="{% static 'belectro/css/services.css' %}" >
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="{% static 'belectro/css/neonmenu.css' %}">
+
+</head>
+    <body>
+
+
+        <div class="nav-bar fixed-top" >
+        {% include "belectro/neonmenu.html" %}
+        </div>
+        <div>  </div>
+        <div class="jumbotron jumbotronTop w-100 " id="jumbotronTop">
+
+                  <h1 class="display-4 "> Instalime Elektrike</h1>
+
+
+        </div>
+            <br>
+                <div class="card mb-3 shadow p-3 mb-5 bg-white rounded" style="max-width: 940px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img   src="{% static "belectro/images/electricModern.jpg" %}"  class="card-img" alt="..."  >
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                          <h4 class="card-title">Ne ofrojme:</h4>
+                        <h5 class="card-title">Instalime Bashkëkohore ne Rezidenca Familjare dhe Biznese</h5>
+                          <p class="card-text">•Infrastukture per sherbimet elektrike</p>
+                          <p class="card-text">•Sherndarje te energjise elektrike</p>
+                          <p class="card-text">•Instalime te sistemeve te ndriçimit</p>
+                          <p class="card-text">•Tokezim dhe sisteme mbrojtese</p>
+                          <p class="card-text">•Instalim te sitemeve mbrojtjese nga shkarkimet atmosferike</p>
+                          <p class="card-text">•Instalime te tensionit te larte</p>
+                          <p class="card-text">•Instalime te tensionit te ulet</p>
+
+
+                          <p class="card-text"></p>
+                          <p class="card-text"></p>
+                           </div>
+                    </div>
+                  </div>
+                </div>
+               <hr>
+                <div class="card mb-3 shadow p-3 mb-5 bg-white rounded" style="max-width: 940px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://cdn.pixabay.com/photo/2017/09/19/22/10/tool-2766835__340.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">Riparime </h4>
+                         <p class="card-text">Kryejme riparime te ndryshme duke filluar nga ato me te thjeshtat e deri tek ato me te komplikuarat.</p>
+                          <p class="card-text">•Riparime te Instalimeve Elektrike</p>
+                          <p class="card-text">•Riparime te sistemeve Ndricuese</p>
+                          <p class="card-text">•Riparime te tensioneve te ndryshme</p>
+                          <p class="card-text">Per çdo riparim qe duhet kryer ju lutemi mos hezitoni te na kontaktoni!</p>
+
+                          <p class="card-text"><span style="color: red !important;">Kujdes!  </span>Riparimet te kryera nga persona te paautorizuar ose jo te fushes mund te shkaktojne deme te ndryshme deri ne humbje jete! Çdo riparim apo demtim i instalimeve duhet kryer nga nje ekspert i fushes dhe jo nga persona te pa autorizuar!</p>
+
+                          <p class="card-text"></p>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+               <hr>
+                <div class="card mb-3 shadow p-3 mb-5 bg-white rounded" style="max-width: 940px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://network-data-cabling.co.uk/wp-content/uploads/Paxton%20Net2%20entryphone.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">Instalime Citofonike</h4>
+                         <p class="card-text"> Kryejme instalime te sistemeve Citofonike per:</p>
+                          <p class="card-text">•Ambjente Familjare</p>
+                          <p class="card-text">•Objekte Biznesi te vogel</p>
+                          <p class="card-text">•Objekte Biznesi Industrial</p>
+                          <p class="card-text">•Institucione te ndryshme</p>
+
+                           </div>
+                    </div>
+                  </div>
+                </div>
+               <hr>
+
+
+            </div>
+        {% include "belectro/footer-menu.html" %}
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js" ></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    </body>
+</html>

@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#neon{
+  background: whitesmoke;
+
+
+}
+nav{
+  background: transparent;
+
+
+
+
+}
+nav .active{
+  background-color: darkgreen;
+  color:white;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: darkgreen;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 70px;
+  padding-left: 60px;
+  text-decoration: none;
+
+}
+nav #logoLink:hover{
+  text-decoration: none;
+}
+nav ul{
+  float: right;
+  margin-right: 70px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: transparent;
+
+  margin: 0 5px;
+}
+nav ul li a{
+  color: darkgreen;
+
+  line-height: 80px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 15px;
+  width: 220px;
+  position: center;
+}
+nav #contactList{
+  width: 120px;
+
+
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li a:hover{
+  background-color: darkgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  //box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid white;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0;
+  width: 220px;
+  float: none;
+  display: list-item;
+  //border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+  width: 100px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+
+/*--------- Tablets-------*/
+
+@media  (max-width: 900px) {
+
+
+  nav{
+    background-color: transparent;
+
+  }
+
+    nav ul{
+
+
+         width: 75%;
+         
+         /*height: calc(100vh - 50px);*/
+         margin-top: 29px;
+         background-color: whitesmoke ;
+         top: 50%;
+         left: 1%;
+         transition: 1s;
+         padding: 0;
+         
+
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li, nav ul ul li{
+    display: block;
+    width: 100%;
+    line-height: 70%;
+         transition: 5s;
+
+
+
+  }
+  nav ul ul li{
+    width: 100%;
+    left: -50%;
+    text-align: left;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: darkgreen;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: left;
+
+  }
+  .show:hover{
+    color: red;
+  }
+  .icon{
+    display: block;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 35px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0;
+    float: none;/*it was none*/
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+
+
+  }
+
+  nav ul ul a{
+    padding-left: 40px;
+
+
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+
+
+  }
+  nav ul ul li{
+    border-bottom: 0;
+    background-color: transparent;
+     line-height: 50px;
+
+
+    text-align: left;
+    left: 5%;
+    padding: 10px;
+
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: right;
+
+
+
+}
+
+
+/*header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+
+
+}
+p{
+  font-size: 30px;
+  font-weight: 500;
+}*/
+}
+
+
+
+
+
+
+/* ---------------------SMALLER PHONE---------------------------*/
+
+@media  (max-width: 650px) {
+
+
+  nav{
+    background-color: whitesmoke;
+  }
+
+    nav ul{
+
+         width: 100%;
+         /*height: calc(100vh - 50px);*/
+         margin-top: 29px;
+         background-color: whitesmoke;
+         top: 50%;
+         left: 10%;
+         transition: 1s;
+         padding: 0;
+
+
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li, nav ul ul li{
+    display: block;
+    width: 90%;
+    line-height: 80%;
+
+
+
+      /*position: fixed;
+         width: 100%;
+         height: calc(100vh - 50px);
+         margin-top: 40px;
+         background: whitesmoke ;
+         top: 40px;/
+         left: 10%;*/
+         transition: 5s;
+
+
+  }
+  nav ul ul li{
+    width: 95%;
+    left: -10%;
+  }
+
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: darkgreen;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .show:hover{
+    color: red;
+  }
+  .icon{
+    display: block;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 35px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0;
+    float: none;/*it was none*/
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+
+
+  }
+
+  nav ul ul a{
+    padding-left: 40px;
+
+
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+
+
+  }
+  nav ul ul li{
+    border-bottom: 0;
+    background-color: transparent;
+     line-height: 50px;
+
+
+    text-align: left;
+    /*left: 10%;*/
+    padding: 10px;
+
+
+
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: right;
+
+
+
+}
+
+
+/*header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+
+
+}
+p{
+  font-size: 30px;
+  font-weight: 500;
+}*/
+}
+
+/* ---------------------More than SMALLER PHONE---------------------------*/
+
+@media  (max-width: 350px) {
+
+
+  nav{
+    background-color: whitesmoke;
+    width: 100%;
+  }
+
+    nav ul{
+
+         width: 100%;
+         /*height: calc(100vh - 50px);*/
+         margin-top: 29px;
+         background-color: whitesmoke;
+         top: 50%;
+         left: 10%;
+         transition: 1s;
+         padding: 0;
+
+
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li, nav ul ul li{
+    display: block;
+    width: 100%;
+    line-height: 10%;
+
+
+
+      /*position: fixed;
+         width: 100%;
+         height: calc(100vh - 50px);
+         margin-top: 40px;
+         background: whitesmoke ;
+         top: 40px;/
+         left: 10%;*/
+         transition: 5s;
+
+
+  }
+  nav ul ul li{
+    width: 100%;
+    left: -10%;
+  }
+
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: darkblue;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .show:hover{
+    color: red;
+  }
+  .icon{
+    display: block;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0;
+    float: none;/*it was none*/
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+
+
+  }
+
+  nav ul ul a{
+    padding-left: 40px;
+
+
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+
+
+  }
+  nav ul ul li{
+    border-bottom: 0;
+    background-color: transparent;
+     line-height: 20px;
+
+
+    text-align: left;
+    /*left: 10%;*/
+    padding: 10px;
+
+
+
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: right;
+
+
+
+}
+}

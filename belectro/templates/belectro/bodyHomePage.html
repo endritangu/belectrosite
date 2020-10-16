@@ -1,0 +1,62 @@
+{% load static %}
+
+
+
+
+    <meta charset="UTF-8">
+    {% block links_css %}
+
+    {% endblock links_css%}
+    <link rel="stylesheet" type="text/css" href="{% static 'belectro/css/bodyHomePage.css' %}">
+
+     <div class="container">
+
+        <div class="jumbotron" id="services"> <h1>Shërbimet</h1></div>
+
+        <div class="row " style="height: 80%;">
+          <div class="col-md-4 col-12"  >
+             <div class="card  shadow p-3 mb-5 bg-white rounded" >
+                <img src="{% static "belectro/images/lamp.jpg" %}" class="card-img-top" alt="..." height="35%">
+                <div class="card-body">
+                  <h5 class="card-title">Sherbime Elektrike</h5>
+                  <p class="card-text">Kompania jone, nje Lider ne sektorin e sherbimeve elektrike, ka zgjidhjen e duhur per cdo nevoje tuajen.<br> Jepini elektricitet kudo ambjetit tuaj me ndihmen e eksperteve tane.<br>Nxitoni te perfitoni me te miren!</p>
+                    <a class="btn btn-primary" href="/electric" role="button">Më shumë</a>
+                </div>
+             </div>
+          </div>
+
+          <div class="col-md-4 col-12" >
+              <div class="card shadow p-3 mb-5 bg-white rounded">
+                <img src="{% static "belectro/images/heatandcold1.jpg" %}" class="card-img-top" alt="..." height="35%">
+                <div class="card-body">
+                  <h5 class="card-title">Sisteme Ngrohje-Ftohje</h5>
+                  <p class="card-text">Kursimi i energjise elektrike behet me i dukshem me sistemin e duhur Ngrohes dhe Ftohes.<br>Nje sistem i mire Ndrohje-Ftohje do te thote me shume perfitime ekonomike dhe efikasitet.<br> Jepini ambjentit tuaj ate qe meriton</p>
+                    <a class="btn btn-primary" href="/heat-and-cold" role="button">Më shumë</a>
+                </div>
+               </div>
+          </div>
+
+          <div class="col-md-4 col-12" >
+               <div class="card shadow p-3 mb-5 bg-white rounded">
+                <img src="{% static "belectro/images/computers1.jpg" %}" class="card-img-top" alt="..." height="35%">
+                <div class="card-body">
+                  <h5 class="card-title">Servis PC, Smartphone & Web development</h5>
+                  <p class="card-text">Sherbimet me te mira dhe cilesore ne treg per PC-ne apo smartphonin tuaj do i gjeni vetem ne nje vend. <br>Me ne ju mund te krijoni websiten e duhur per biznesin tuaj.<br>Ne ofrojme Cilesi dhe Garanci! </p>
+                  <a class="btn btn-primary" href="/computers" role="button">Më shumë</a>
+                </div>
+               </div>
+          </div>
+
+        </div>
+
+       </div>
+     </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+

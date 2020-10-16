@@ -1,0 +1,83 @@
+body {
+
+
+    margin:0;
+    padding:0;
+
+}
+#header{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.container{
+
+     margin-top: 10px;
+     width: 100%;
+}
+.container-caption{
+    font-size: 50px;
+    background-color: red;
+}
+h2{
+    font-size: 60px;
+    color: #145A32;
+    display: inline;
+
+
+}
+.display-4{
+    background-color: #F2F3F4;
+    opacity: 0.8;
+    border-radius: 10px;
+    width: 100%;
+}
+#carouselExampleIndicators{
+
+    height: 500px;
+    width: 100%;
+
+}
+#contactPage{
+
+}
+
+
+
+
+@media (max-width: 991px){
+
+        #header{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        #carouselExampleIndicators{
+                height: 200px;
+                width: 100%;
+                margin-top: 90px;
+
+            }
+        .carousel-inner {
+
+            height: 500px;
+            width: 100%;
+            margin-top: 90px;
+        }
+}
+@media (max-width: 250px){
+        #header{
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 25%;
+        }
+    .logo{
+        height: 25%;
+    }
+
+
+/*body part of electric.html page*/
+@media{{
+}
+}}
+
+
+
